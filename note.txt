@@ -1,0 +1,18 @@
+Tìm kiếm - tìm hiểu đề tài
+
+	https://www.youtube.com/watch?v=1YjAEFfSFC8
+-LoRa
+	https://github.com/khanhhoilm/lora-sample-code
+
+	https://www.youtube.com/watch?v=3uDlB1_G76M
+
+	https://www.youtube.com/watch?v=OovfNgqE7ao
+
+	https://www.youtube.com/watch?v=GooB9n51rlk
+-ESP8266
+	
+	https://www.youtube.com/watch?v=OJIoFtOrXNs
+
+	https://www.youtube.com/watch?v=0LYmD8jv7xo
+
+	https://www.youtube.com/watch?v=qBM61K-wbn8
