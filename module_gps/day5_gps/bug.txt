@@ -1,0 +1,5 @@
+avrdude: ser_open(): can't open device "\\.\COM4": Access is denied
+
+https://stackoverflow.com/questions/40771638/avrdude-ser-open-cant-open-device-com3-access-is-denied
+
+close the serial monitor tab
