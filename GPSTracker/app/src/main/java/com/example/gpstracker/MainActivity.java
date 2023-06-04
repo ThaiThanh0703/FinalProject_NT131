@@ -86,8 +86,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(BluetoothOff_screen);
             // startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
         }else{
-            Intent FindDevice_screen = new Intent(this,FindDevice.class);
-            startActivity(FindDevice_screen);
+           Intent FindDevice_screen = new Intent(this,FindDevice.class);
+           startActivity(FindDevice_screen);
         }
 
         /*btnOn.setOnClickListener(new View.OnClickListener() {

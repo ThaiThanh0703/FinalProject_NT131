@@ -12,8 +12,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GPSTracker"
+        android:theme="@style/AppTheme"
         tools:targetApi="31">
+
+        <activity
+            android:name=".FindDevice"
+            android:exported="false" />
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+code này lam roi ung dung gay xuat hien 2 main
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name=".BletoothOff_Screen"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -23,6 +37,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
