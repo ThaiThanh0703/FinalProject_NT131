@@ -1,0 +1,18 @@
+replace startActivityForResult with Activity Result APIs?
+
+documentation: https://developer.android.com/training/basics/intents/result#java
+
+https://stackoverflow.com/questions/68405703/how-to-use-registerforactivityresult-correctly-getting-lifecycleowners-must-ca
+
+https://stackoverflow.com/questions/61455381/how-to-replace-startactivityforresult-with-activity-result-apis
+
+https://www.appsloveworld.com/kotlin/100/1/how-to-resolve-the-error-lifecycleowners-must-call-register-before-they-are-star#:~:text=so%20to%20solve%20your%20issue%20move%20your%20register,scope%2C%20and%20on%20google_sign_in_button%20click-listener%20call%20launch%20function
+
+https://stackoverflow.com/questions/63435989/startactivityforresultandroid-content-intent-int-is-deprecated
+
+https://stackoverflow.com/questions/62613424/java-solution-for-startactivityforresultintent-int-in-fragment-has-been-depre
+
+https://stackoverflow.com/questions/68139603/startactivityforresultandroid-content-intent-int-is-deprecated
+
+https://stackoverflow.com/questions/60530621/cannot-resolve-symbol-val-and-as
+
