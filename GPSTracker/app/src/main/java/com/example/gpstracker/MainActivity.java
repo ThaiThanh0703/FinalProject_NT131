@@ -19,10 +19,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private static final int REQUEST_ENABLE_BT = 0;
-    private static final int REQUEST_DISCOVERABLE_BT = 0;
+    //private static final int REQUEST_ENABLE_BT = 0;
+    //private static final int REQUEST_DISCOVERABLE_BT = 0;
 
-    private ActivityResultLauncher<Intent> discoverBtLauncher = registerForActivityResult(
+   /* private ActivityResultLauncher<Intent> discoverBtLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-    );
+    );*/
 
-    private ActivityResultLauncher<Intent> enableBtLauncher = registerForActivityResult(
+   /* private ActivityResultLauncher<Intent> enableBtLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
                 @Override
@@ -54,17 +54,16 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-    );
+    );*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final TextView out = (TextView) findViewById(R.id.tvOut);
-        final Button btnOn = (Button) findViewById(R.id.bthBluetoothOn);
-        final Button btnCoverage = (Button) findViewById(R.id.bthBluetoothCoverage);
-        final Button btnOff = (Button) findViewById(R.id.bthBluetoothOff);
+        // final Button btnOn = (Button) findViewById(R.id.bthBluetoothOn);
+        //  final Button btnCoverage = (Button) findViewById(R.id.bthBluetoothCoverage);
+        //  final Button btnOff = (Button) findViewById(R.id.bthBluetoothOff);
         final BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
         // Phone does not support Bluetooth so let the user know and exit.
@@ -82,7 +81,16 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        btnOn.setOnClickListener(new View.OnClickListener() {
+        if (!mBluetoothAdapter.isEnabled()) {
+            Intent BluetoothOff_screen = new Intent(this,BletoothOff_Screen.class);
+            startActivity(BluetoothOff_screen);
+            // startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+        }else{
+            Intent FindDevice_screen = new Intent(this,FindDevice.class);
+            startActivity(FindDevice_screen);
+        }
+
+        /*btnOn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (!mBluetoothAdapter.isEnabled()) {
                     Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
@@ -90,9 +98,9 @@ public class MainActivity extends AppCompatActivity {
                    // startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
                 }
             }
-        });
+        });*/
 
-        btnCoverage.setOnClickListener(new View.OnClickListener() {
+       /* btnCoverage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 if (!mBluetoothAdapter.isDiscovering()) {
@@ -106,9 +114,9 @@ public class MainActivity extends AppCompatActivity {
                    // startActivityForResult(enableBtIntent, REQUEST_DISCOVERABLE_BT);
                 }
             }
-        });
+        });*/
 
-        btnOff.setOnClickListener(new View.OnClickListener() {
+      /*  btnOff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 mBluetoothAdapter.disable();
@@ -118,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast toast = Toast.makeText(context, text, Toast.LENGTH_SHORT);
                 toast.show();
             }
-        });
+        });*/
 
 
     }
