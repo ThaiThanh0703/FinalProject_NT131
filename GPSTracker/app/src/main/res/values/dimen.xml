@@ -2,4 +2,6 @@
 <resources>
     <dimen name="title_firstscreen">26dp</dimen>
     <dimen name="bl_disabled_firstscreen">23dp</dimen>
+    <dimen name="sizetext_bleDevice_deviceName">20dp</dimen>
+    <dimen name="marginTop_bleDevice">5dp</dimen>
 </resources>
