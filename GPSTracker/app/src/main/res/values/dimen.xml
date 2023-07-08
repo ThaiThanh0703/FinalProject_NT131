@@ -4,4 +4,11 @@
     <dimen name="bl_disabled_firstscreen">23dp</dimen>
     <dimen name="sizetext_bleDevice_deviceName">20dp</dimen>
     <dimen name="marginTop_bleDevice">5dp</dimen>
+    <dimen name="marginTop_bleData">10dp</dimen>
+    <dimen name="marginLeft_bleData">10dp</dimen>
+    <dimen name="marginLeftM_bleData">35dp</dimen>
+    <dimen name="marginLeftD_bleData">40dp</dimen>
+    <dimen name="marginRight_bleData">15dp</dimen>
+    <dimen name="sizetext_bleData">18dp</dimen>
+
 </resources>

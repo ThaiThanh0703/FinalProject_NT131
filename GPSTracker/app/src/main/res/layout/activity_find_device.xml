@@ -6,4 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".FindDevice">
 
+    <TextView
+        android:id="@+id/tvScreenBar_findDevice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Find Devices"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sizetext_bleData"
+        android:background="@color/light_blue_A200"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <ListView
+        android:id="@+id/lstListDevices_findDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/tvScreenBar_findDevice"
+
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

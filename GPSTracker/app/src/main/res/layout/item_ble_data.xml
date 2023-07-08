@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_dataDevice_cl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_button"
+   >
+
+
+    <ImageView
+        android:id="@+id/imgvWave"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/wave"
+
+
+        android:layout_marginTop="@dimen/marginTop_bleData"
+        android:layout_marginLeft="@dimen/marginLeft_bleData"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sizetext_bleData"
+
+
+        android:layout_marginLeft="@dimen/marginLeft_bleData"
+        app:layout_constraintBaseline_toBottomOf="@id/imgvWave"
+        app:layout_constraintLeft_toRightOf="@id/imgvWave"
+        />
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identifier"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sizetext_bleData"
+
+        android:layout_marginLeft="@dimen/marginLeftM_bleData"
+        app:layout_constraintBaseline_toBottomOf="@id/imgvWave"
+        app:layout_constraintLeft_toRightOf="@id/tvDistance"
+        />
+
+    <TextView
+        android:id="@+id/tvDistanceData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m"
+
+        android:layout_marginLeft="@dimen/marginLeftD_bleData"
+        android:layout_marginTop="@dimen/marginTop_bleDevice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDistance"
+        app:layout_constraintRight_toRightOf="@id/tvDistance"/>
+
+    <TextView
+        android:id="@+id/tvIDData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        app:layout_constraintRight_toRightOf="@id/tvId"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvDistanceData" />
+
+    <TextView
+        android:id="@+id/tvTimeReceived"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="9 seconds ago"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sizetext_bleData"
+
+        android:layout_marginRight="@dimen/marginRight_bleData"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvId"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
